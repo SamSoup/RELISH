@@ -9,7 +9,7 @@ Source code is forthcoming.
 
 <p align="center">
   <a href="https://www.cosmicai.org/">
-    <img src="assets/cosmicai-logo.png" alt="CosmicAI logo" width="420">
+    <img src="assets/cosmicai-logo.png" alt="NSF-Simons AI Institute for Cosmic Origins logo" width="420">
   </a>
 </p>
 
