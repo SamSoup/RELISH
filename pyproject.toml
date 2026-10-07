@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "relish-readout"
+version = "0.1.0"
+description = "RELISH readout architecture for scalar regression over frozen language-model hidden states."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "torch",
+    "transformers",
+]
+
+[project.urls]
+Paper = "https://arxiv.org/abs/2604.01206"
+Repository = "https://github.com/SamSoup/RELISH"
+
+[tool.setuptools]
+packages = ["relish"]
