@@ -2,6 +2,8 @@
 
 This repository contains the source code for [RELISH: LLM REgression with a Latent Iterative State Head](https://openreview.net/forum?id=IebWFoQwdz), published as a conference paper at COLM 2026.
 
+[Poster (PDF)](assets/RELISH_COLM_2026_Poster.pdf)
+
 - <ins>WHAT:</ins> RELISH is a lightweight text regression architecture that predicts scalar values directly from frozen LLM representations.
 - <ins>HOW:</ins> RELISH iteratively refines a learned latent state via cross-attention over token-level representations, then maps the final state to a point estimate with a linear regressor.
 - <ins>HOW WELL:</ins> Over 6 datasets, 4 LLMs, & 2 LLM training regimes, RELISH tops baselines from all 3 major LLM regression families while using only ∼3.4–3.7M trainable parameters.
