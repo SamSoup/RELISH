@@ -50,6 +50,21 @@ model = RelishRegressor(d_model=backbone.hidden_size).to(backbone.device)
 predictions = model(hidden, attention_mask=attention_mask)
 ```
 
+## Datasets
+
+| Dataset | Task | Hugging Face |
+|---|---|---|
+| STS-B | Semantic textual similarity | [mteb/stsbenchmark-sts](https://huggingface.co/datasets/mteb/stsbenchmark-sts) |
+| SICKR-STS | Semantic relatedness | [Samsoup/sickr-sts](https://huggingface.co/datasets/Samsoup/sickr-sts) |
+| WMT2020 En–Zh | Translation quality estimation | [Samsoup/Samsoup-WMT2020-en-zh](https://huggingface.co/datasets/Samsoup/Samsoup-WMT2020-en-zh) |
+| WMT2020 Ru–En | Translation quality estimation | [Samsoup/Samsoup-WMT2020-ru-en](https://huggingface.co/datasets/Samsoup/Samsoup-WMT2020-ru-en) |
+| WMT2020 Si–En | Translation quality estimation | [Samsoup/Samsoup-WMT2020-si-en](https://huggingface.co/datasets/Samsoup/Samsoup-WMT2020-si-en) |
+| StatLLM | SAS code quality estimation | [Samsoup/StatLLM](https://huggingface.co/datasets/Samsoup/StatLLM) |
+
+The linked StatLLM release contains three prediction targets and retains the
+overall quality score under `measurements["statllm_total_score"]`. RELISH predicts
+this overall score on a 0–50 scale.
+
 ## Acknowledgments
 
 We appreciate the valuable feedback we received on this manuscript from our
